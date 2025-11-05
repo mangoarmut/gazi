@@ -1,0 +1,197 @@
+.columns-2 {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+.columns-2 > p {
+    margin-bottom: 20px;
+}
+
+
+ul.pagination {
+    display: flex;
+    align-items: center;
+}
+ul.pagination li {
+    margin: 5px;
+}
+ul.pagination li a,
+ul.pagination li span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    transition: 300ms all;
+    border: 2px solid #eeeeee;
+    border-radius: 10px !important;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #292532;
+}
+ul.pagination li a:hover {
+    background: #292532;
+    color: #fff;
+}
+ul.pagination li.active a,
+ul.pagination li.active span {
+    background: #292532;
+    color: #fff;
+    border-color: inherit;
+}
+ul.pagination .prev a {
+    border: none !important;
+  }
+ul.pagination .prev a:hover {
+    background: #fff !important;
+}
+ul.pagination .prev img {
+    transform: rotate(-180deg);
+}
+ul.pagination .next a {
+    border: none !important;
+}
+ul.pagination .next a:hover {
+    background: #fff !important;
+}
+ul.pagination .disabled {
+    opacity: 0.4;
+}
+.tab-category ul li a.active {
+    opacity: 1;
+}
+.info-form .content {
+    position: relative;
+    z-index: 99;
+}
+.info-form .doctor {
+    z-index: 1;
+}
+.patient-info-form-error {
+    display: none;
+    color: rgb(226, 60, 60);
+    margin: 5px 0px 0px 5px;
+}
+.kvkk-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+.kvkk-popup-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #fff;
+    opacity: 0.7;
+}
+.kvkk-popup-container {
+    position: relative;
+    width: 800px;
+    height: 80%;
+    margin: 50px auto 0px auto;
+}
+.kvkk-popup-contents {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+}
+.kvkk-popup-contents h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.kvkk-popup-contents p {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.kvkk-popup-close {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: -15px;
+    top: -25px;
+    z-index: 101;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+}
+ul.content-list {
+    padding-left: 25px;
+}
+ul.content-list li {
+    list-style-type: disc;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #343434;
+    font-family: "Poppins", sans-serif;
+}
+#mobile-lang {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .header-top {
+        display: none;
+    }
+    #mobile-lang {
+        display: block;
+    }
+}
+
+#kvkk-info {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    background-color: #f1f2f4;
+    padding: 15px 0px;
+    box-shadow: inset 0px 5px 5px rgba(222, 220, 213, 0.2);
+    color: #292532;
+    font-size: 14px;
+    display: none;
+}
+.kvkk-info-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.kvkk-info-content > p {
+    flex: 1;
+}
+.kvkk-info-buttons {
+    margin-left: 30px;
+}
+.kvkk-info-buttons > a {
+    background-color: #123464;
+    width: 100px;
+    text-align: center;
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 4px;
+    color: #fff !important;
+    font-size: 13px;
+    cursor: pointer;
+}
